@@ -1,0 +1,1 @@
+Wendigo_RIG_ANIMATION
