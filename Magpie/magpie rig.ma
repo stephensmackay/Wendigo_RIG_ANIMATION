@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: magpie rig.ma
-//Last modified: Mon, Sep 13, 2021 12:10:29 PM
+//Last modified: Mon, Sep 13, 2021 12:16:02 PM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "F0062CBD-4D0F-40F1-B6C8-8FAAE12D4602";
+fileInfo "UUID" "6D08051F-40CD-97DB-D397-E2B7EB065ACC";
 createNode transform -s -n "persp";
 	rename -uid "B667A38F-4122-AE46-319B-A684A5DDD8F0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 69.748133879706046 43.779815462442208 32.20981982292389 ;
-	setAttr ".r" -type "double3" -25.538352705009537 -1737.4000000002763 3.45562382534336e-15 ;
+	setAttr ".t" -type "double3" 59.045042726019169 13.195651772059641 58.810048534594337 ;
+	setAttr ".r" -type "double3" -3.3383527050110389 -1757.8000000002576 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7456BA59-4737-3EB1-4E82-9A961821CF5F";
 	setAttr -k off ".v" no;
