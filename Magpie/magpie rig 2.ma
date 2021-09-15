@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: magpie rig 2.ma
-//Last modified: Wed, Sep 15, 2021 08:36:04 AM
+//Last modified: Wed, Sep 15, 2021 08:55:35 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "230E5260-41E9-DEB6-949B-B9B3A00B6088";
+fileInfo "UUID" "36527CE1-4ED4-CB70-58FA-EA928129EE4C";
 createNode transform -s -n "persp";
 	rename -uid "B667A38F-4122-AE46-319B-A684A5DDD8F0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 36.921645552899705 -2.3424770616726054 77.694974918344528 ;
-	setAttr ".r" -type "double3" 8.6616473019918629 -1778.5999999993937 -6.405136970487871e-16 ;
+	setAttr ".t" -type "double3" -5.8277023434023114 -3.9534771526106702 67.517594402559098 ;
+	setAttr ".r" -type "double3" 11.661647301668594 -1807.8000000002594 3.009615456194214e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7456BA59-4737-3EB1-4E82-9A961821CF5F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 90.681016038841832;
+	setAttr ".coi" 75.532310678856135;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -41029,6 +41029,7 @@ createNode parentConstraint -n "R_Feather_plane_parentConstraint1" -p "R_Feather
 	setAttr -k on ".w0";
 createNode transform -n "Skeleton" -p "Magpie";
 	rename -uid "989A4D89-47C9-0593-6C68-118A4CFB77B7";
+	setAttr -l on -k off ".v" no;
 createNode joint -n "Body_Jnt" -p "Skeleton";
 	rename -uid "F137E621-4889-55A1-2583-C4950B28E53B";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
