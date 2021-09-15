@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: magpie rig 2.ma
-//Last modified: Wed, Sep 15, 2021 08:22:25 AM
+//Last modified: Wed, Sep 15, 2021 08:36:04 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "B5259961-4F22-CDCC-62BA-22B077349D86";
+fileInfo "UUID" "230E5260-41E9-DEB6-949B-B9B3A00B6088";
 createNode transform -s -n "persp";
 	rename -uid "B667A38F-4122-AE46-319B-A684A5DDD8F0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 24.67239815679034 8.3924025667842947 53.651244458958161 ;
-	setAttr ".r" -type "double3" 2.6616473019379563 -1780.9999999996078 -1.0511938777402582e-16 ;
+	setAttr ".t" -type "double3" 36.921645552899705 -2.3424770616726054 77.694974918344528 ;
+	setAttr ".r" -type "double3" 8.6616473019918629 -1778.5999999993937 -6.405136970487871e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7456BA59-4737-3EB1-4E82-9A961821CF5F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 62.914270325809021;
+	setAttr ".coi" 90.681016038841832;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -40977,7 +40977,7 @@ createNode parentConstraint -n "L_Feather_plane1_parentConstraint1" -p "L_Feathe
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 9.068026017746746 0.41135927647298764 -2.0596765515090736 ;
 	setAttr ".tg[0].tor" -type "double3" -1.053482754786554 -28.60921963230696 0.087478031933572786 ;
-	setAttr ".lr" -type "double3" -1.0534827547865537 -28.609219632306967 1.0263349309200995 ;
+	setAttr ".lr" -type "double3" -1.053482754786554 -28.60921963230696 0.087478031933572759 ;
 	setAttr ".rst" -type "double3" 11.856460071373268 10.106177780699992 -4.0244918104888709 ;
 	setAttr ".rsrr" -type "double3" -1.0534827547865537 -28.609219632306967 1.0263349309200995 ;
 	setAttr -k on ".w0";
@@ -41023,7 +41023,7 @@ createNode parentConstraint -n "R_Feather_plane_parentConstraint1" -p "R_Feather
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 14.648634555242069 -0.56818026994993787 2.0546808171736908 ;
 	setAttr ".tg[0].tor" -type "double3" -180 28.626970944839087 3.8299200432437587e-15 ;
-	setAttr ".lr" -type "double3" -1.0191094472677193e-15 -28.626970944839091 1.1729364261426032 ;
+	setAttr ".lr" -type "double3" -9.7719443604850126e-16 -28.626970944839091 3.8299200432437595e-15 ;
 	setAttr ".rst" -type "double3" 11.852244555242068 10.114470269949939 -4.0195008171736912 ;
 	setAttr ".rsrr" -type "double3" -9.7719443604850126e-16 -28.626970944839091 3.8299200432437595e-15 ;
 	setAttr -k on ".w0";
@@ -41068,7 +41068,6 @@ createNode parentConstraint -n "L_wing_Jnt_parentConstraint1" -p "L_wing_Jnt";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -8.8817841970012523e-16 -3.5527136788005009e-15 
 		2.2204460492503131e-16 ;
-	setAttr ".lr" -type "double3" 0 0 0.93885689898652647 ;
 	setAttr ".rst" -type "double3" 2.7963917255401602 0.89055538177489879 -0.24730396270751931 ;
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "L_wing_Jnt_scaleConstraint1" -p "L_wing_Jnt";
@@ -41119,7 +41118,7 @@ createNode parentConstraint -n "R_wing_Jnt_parentConstraint1" -p "R_wing_Jnt";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 0 -2.2204460492503131e-16 ;
 	setAttr ".tg[0].tor" -type "double3" 1.4033418597069752e-14 0 0 ;
-	setAttr ".lr" -type "double3" -1.4030478091546579e-14 -2.8726650207533726e-16 -1.1729364261425992 ;
+	setAttr ".lr" -type "double3" -1.4033418597069752e-14 0 0 ;
 	setAttr ".rst" -type "double3" -2.79639 0.89055498413086021 -0.24730870372772196 ;
 	setAttr ".rsrr" -type "double3" -1.4033418597069752e-14 0 0 ;
 	setAttr -k on ".w0";
@@ -41194,7 +41193,6 @@ createNode transform -n "L_wing_ctrl_grp" -p "Controls";
 	rename -uid "E305A55C-4C41-BE4B-19E9-72A3E222F4C0";
 createNode transform -n "L_wing_ctrl" -p "L_wing_ctrl_grp";
 	rename -uid "5E8A4C16-4C21-4CB1-88A1-85B037A2A0EE";
-	setAttr ".r" -type "double3" 0 0 0.93885689898652647 ;
 createNode nurbsCurve -n "L_wing_ctrlShape" -p "L_wing_ctrl";
 	rename -uid "E8E6B7C4-40D5-9709-7A86-608A5D5BA5B8";
 	setAttr -k off ".v";
@@ -41252,7 +41250,6 @@ createNode transform -n "R_wing_ctrl_grp" -p "Controls";
 	rename -uid "C5E5FA22-4593-B617-D153-03B8C930AA1B";
 createNode transform -n "R_wing_ctrl" -p "R_wing_ctrl_grp";
 	rename -uid "EBE47BEF-4A6B-9D99-EABA-68AB65377EBB";
-	setAttr ".r" -type "double3" 0 0 -1.1729364261425992 ;
 createNode nurbsCurve -n "R_wing_ctrlShape" -p "R_wing_ctrl";
 	rename -uid "304BA61A-419A-9617-987B-829D5C6B31F6";
 	setAttr -k off ".v";
