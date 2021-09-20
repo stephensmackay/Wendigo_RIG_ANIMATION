@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
-//Name: Scene_002.ma
-//Last modified: Mon, Sep 20, 2021 12:02:03 PM
+//Name: Scene_001.ma
+//Last modified: Mon, Sep 20, 2021 12:00:43 PM
 //Codeset: 1252
 requires maya "2019";
 currentUnit -l centimeter -a degree -t film;
@@ -9,29 +9,29 @@ fileInfo "product" "Maya 2019";
 fileInfo "version" "2019";
 fileInfo "cutIdentifier" "201812112215-434d8d9c04";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19043)\n";
-fileInfo "UUID" "ED3AC18C-47B7-570D-3E8D-AE8049AE90D6";
+fileInfo "UUID" "7CEAAD3C-4E26-1622-4706-66B73B414FC1";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
-	rename -uid "DD665ADC-4092-FD22-E43E-F7BDBA76793B";
+	rename -uid "05B1533A-4D25-4218-651E-F18E2142F12D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" 9.3923745033343202 32.862615439651108 37.906398797037482 ;
+	setAttr ".r" -type "double3" -36.938352729602364 5.4000000000000954 9.9835406865268888e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
-	rename -uid "E1F4FFCB-4CF7-A2DA-52A0-9C97F798EDDE";
+	rename -uid "53D38BFE-4D27-0F7B-5A7E-CB8EEF09AA83";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.82186966202994;
+	setAttr ".coi" 47.923995769321465;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
-	rename -uid "BCB439A8-4433-9D7E-5063-6D8F5BB46A26";
+	rename -uid "44E56D2F-402E-48CB-947B-B5AEB2DE4A82";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 1000.1 0 ;
 	setAttr ".r" -type "double3" -90 0 0 ;
 createNode camera -s -n "topShape" -p "top";
-	rename -uid "AB0D82D3-4A30-4179-F50C-EC9F97B2EA13";
+	rename -uid "6113EE1E-4DAD-8F8E-3C23-53AF1C2C2EE7";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -42,11 +42,11 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".hc" -type "string" "viewSet -t %camera";
 	setAttr ".o" yes;
 createNode transform -s -n "front";
-	rename -uid "005ABC38-43EE-6CBA-31CD-7D8EE249E69B";
+	rename -uid "B2B174B0-4A17-D230-7D03-8A9823AF1104";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 0 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
-	rename -uid "5D1D0006-46E3-63C0-7986-79B22149E26A";
+	rename -uid "37A71997-45D8-BDE8-2D65-7BB2B4B7B856";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -57,12 +57,12 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr ".hc" -type "string" "viewSet -f %camera";
 	setAttr ".o" yes;
 createNode transform -s -n "side";
-	rename -uid "31A305F8-409D-A451-58C9-CFB413FEE6FA";
+	rename -uid "80DF2C37-479B-9818-9563-C293705C93D2";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1000.1 0 0 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 createNode camera -s -n "sideShape" -p "side";
-	rename -uid "8BC1D185-493F-935E-D9BD-C59EED28A782";
+	rename -uid "71FA6F93-4BCA-1278-DB38-29AD00AFAE44";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
@@ -73,24 +73,24 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "EFC932D2-4FCB-5E5B-09F5-74BF511CBB6F";
+	rename -uid "245C6430-4D48-E6BD-8F55-208A20CCA15F";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E1A98F0B-4C46-EAAA-FF79-0BB9686F3CAA";
+	rename -uid "E2D96AC2-423E-965C-8744-63A783AF9E01";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D9BF6F59-459E-2139-61EA-B39211C34382";
+	rename -uid "175A713B-408A-981C-B399-9986D3D1A514";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4618E4E3-4CB7-58AA-35D7-76856100B1E0";
+	rename -uid "C951F864-439C-88DA-CE08-FB93B4F084C8";
 createNode displayLayer -n "defaultLayer";
-	rename -uid "EDEABEB4-4942-3F34-C18B-2E9EBBBCC103";
+	rename -uid "25023A30-4008-05B1-3F36-0B86592A0031";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9602993E-4329-0D66-C070-638DD5A07732";
+	rename -uid "3394FCAA-4E7C-1304-89CE-3E81B392D60A";
 createNode renderLayer -n "defaultRenderLayer";
-	rename -uid "1A03AFB2-443C-C285-C612-E3A00F7E3F76";
+	rename -uid "9F6108F8-4E6E-A153-5E69-1A9E0AD59DA5";
 	setAttr ".g" yes;
 createNode script -n "uiConfigurationScriptNode";
-	rename -uid "556E1E8D-4019-18D2-39DF-0E805605896E";
+	rename -uid "F3B6B237-4448-CB0A-E185-E4A21CD0C230";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
@@ -134,8 +134,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
-	rename -uid "D3FBC7FB-4EF0-9B93-13DC-87A2C32015F2";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 24 -ast 1 -aet 86 ";
+	rename -uid "E9C44488-42E6-9615-C7A7-5DBC62363448";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 24 -ast 1 -aet 439 ";
 	setAttr ".st" 6;
 select -ne :time1;
 	setAttr ".o" 1;
@@ -177,4 +177,4 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of Scene_002.ma
+// End of Scene_001.ma
