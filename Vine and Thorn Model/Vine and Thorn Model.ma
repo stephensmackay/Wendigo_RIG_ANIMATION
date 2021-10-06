@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Vine and Thorn Model.ma
-//Last modified: Wed, Oct 06, 2021 11:13:54 AM
+//Last modified: Wed, Oct 06, 2021 11:15:35 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "7121A439-464B-14F4-FB14-ED8C8DE29311";
+fileInfo "UUID" "457F4BC6-4CCE-9007-C42C-E7A2393592EF";
 createNode transform -s -n "persp";
 	rename -uid "DC601801-47E9-AC0C-4D1A-AF85752203D4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 286.81611939585417 11.343277096428132 -18.543409087284871 ;
-	setAttr ".r" -type "double3" -3.3383527351902971 -986.19999999990625 0 ;
+	setAttr ".t" -type "double3" 107.90422252485027 19.494419123477037 -2.7820896664097781 ;
+	setAttr ".r" -type "double3" -11.738352735177408 -988.59999999980209 -2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "27A44DA7-41AB-0E33-6061-76BE119F381E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 282.62325344351967;
+	setAttr ".coi" 105.94509254413613;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -37966,7 +37966,7 @@ createNode transform -n "Vine_Root_Switch_Ctrl_Grp";
 createNode transform -n "Vine_Root_Switch_Ctrl" -p "Vine_Root_Switch_Ctrl_Grp";
 	rename -uid "AA9B5A6E-41F1-65F9-2829-6B9D53052B4C";
 	addAttr -ci true -sn "VineRootSwitch" -ln "VineRootSwitch" -min 0 -max 1 -at "long";
-	setAttr -k on ".VineRootSwitch" 1;
+	setAttr -k on ".VineRootSwitch";
 createNode nurbsCurve -n "Vine_Root_Switch_CtrlShape" -p "Vine_Root_Switch_Ctrl";
 	rename -uid "7D01F2AE-4893-B67A-9DC4-958CC8B26764";
 	setAttr -k off ".v";
@@ -38057,7 +38057,7 @@ createNode makeNurbCircle -n "makeNurbCircle1";
 createNode reverse -n "reverse1";
 	rename -uid "1C987CC5-41B0-995A-0271-DB9BF38023F0";
 createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "09776A28-49EF-35E8-501B-8D96C5CC8074";
+	rename -uid "21D06A4E-41DC-D4D4-6B93-C384F8C9AD6B";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1366.8710794282838 -1006.7139954438497 ;
 	setAttr ".tgi[0].vh" -type "double2" 813.37474259505211 148.22703460094417 ;
