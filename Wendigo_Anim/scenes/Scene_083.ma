@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Scene_083.ma
-//Last modified: Thu, Oct 07, 2021 09:12:22 PM
+//Last modified: Thu, Oct 07, 2021 09:16:22 PM
 //Codeset: 1252
 file -rdi 1 -ns "Jeremy_Rig_06" -rfn "Jeremy_Rig_06RN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/morle/Wendigo_RIG_ANIMATION//Jeremy/Jeremy Rig 06.ma";
@@ -16,7 +16,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "90D7EA99-422F-0CEB-1199-0FA6593BEFF5";
+fileInfo "UUID" "F2E42CCE-4C0F-0C32-9246-9A834906695E";
 createNode transform -s -n "persp";
 	rename -uid "BBD30A08-41A1-7999-DE68-4F8ECF92D5DF";
 	setAttr ".v" no;
@@ -14774,7 +14774,7 @@ createNode camera -n "AnimShape" -p "Anim";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 12.453297421192406;
+	setAttr ".coi" 37.227304172303157;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -14941,12 +14941,12 @@ createNode animCurveTL -n "Anim_translateY";
 	rename -uid "17BC922A-4BC1-8BED-EFE2-1DB14CEDA40D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 46.068762747966105;
+	setAttr -s 2 ".ktv[0:1]"  1 46.068762747966105 48 44.74068671050275;
 createNode animCurveTL -n "Anim_translateZ";
 	rename -uid "445D1B6E-42FF-9F56-7C95-6FA92BF166B3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 158.5713760414958;
+	setAttr -s 2 ".ktv[0:1]"  1 158.5713760414958 48 169.87837348100368;
 createNode animCurveTA -n "Anim_rotateX";
 	rename -uid "4A2A77E8-41F9-33E7-0D3E-83AC2C4ADBC9";
 	setAttr ".tan" 18;
